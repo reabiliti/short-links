@@ -7,7 +7,9 @@
   "author": "Alexander Dyuzhikov <alex.duzh@gmail.com>",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "client": "cd client; yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
